@@ -47,15 +47,7 @@ In order to get a better accuracy (better than 80% as achieved by the previous m
 
 * The watchlist parameter has been used in the model, which provides a list of XGB and as far as the DMatrix is concerned ,each of them is tagged with a name.
 
-## CONCLUSION AND BUSINESS IMPROVEMENT
+## CONCLUSION 
 
 * According to MAPE (Mean and Median Error Percentage), our regression model properly predicts the result 87.96 percent (Mean) and 95.63 percent (Median), with error percentages ranging from 3 percent to 12 percent. As of this writing, the R-square value is 0.7689372. Considering that these values range from 0.5 to 0.95, this is a decent predictive model to have in place.
-
-* We can see that positive responses, premium coverage, education (high school or less), employment and retirement status, male gender, income, married or single status, monthly auto premiums, and the number of open complaints and policies all play a role in determining the CLV and its final value.
-
-* It is ironic that as an auto insurance company, vehicle type and size are not important.
-
-* This means that male drivers are more likely to be involved in an accident than their female counterparts.
-
-* Employees and retirees are more likely to need insurance and contribute more to the company as a result.
 
