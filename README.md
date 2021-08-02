@@ -29,21 +29,33 @@ Initially in this project we have analysed the data through various exploratory 
 ## FINAL MODEL - LINEAR REGRESSION WITH XGBOOST MODEL
 In order to get a better accuracy (better than 80% as achieved by the previous model) we applied the Linear Regression Model with XGBoost.
 
-➔ To fit XGBOOST to the data, features (X) and label (Y) sets were prepared to perform the train and test split.
+* To fit XGBOOST to the data, features (X) and label (Y) sets were prepared to perform the train and test split.
 
-➔ The train and test data are used to create a dense matrix.
+*  The train and test data are used to create a dense matrix.
 
-➔ Further, all real-valued variables in the dataset were standardised as the non-standardized variables might have an influence on the model.
+*  Further, all real-valued variables in the dataset were standardised as the non-standardized variables might have an influence on the model.
 
-➔ Owing to the large dimension of the dataset, it is not possible to execute the dense matrix directly, so for that we constructed a sparse model or a “design” matrix.
+* Owing to the large dimension of the dataset, it is not possible to execute the dense matrix directly, so for that we constructed a sparse model or a “design” matrix.
 
-➔ Further, the data frame is internal to the principal user level function, which generates the transposed model matrix for one factor.
+* Further, the data frame is internal to the principal user level function, which generates the transposed model matrix for one factor.
 
-➔ The following metrics were applied to the model to get a better accuracy:
+* The following metrics were applied to the model to get a better accuracy:
 
-1.max.depth = 6: the trees won’t be deep, because our case is very simple ; 2.nthead = 4: the number of cpu threads we are going to use; 3.nround : max number of boosting iterations. 4.eval.metric: allows us to monitor two new metrics for each round, logloss and error. 5.eta : It controls the learning rate. 6.verbose = 1: print evaluation metric.
+   ➔  1.max.depth = 6: the trees won’t be deep, because our case is very simple ; 2.nthead = 4: the number of cpu threads we are going to use; 3.nround : max number of boosting iterations. 4.eval.metric: allows us to monitor two new metrics for each round, logloss and error. 5.eta : It controls the learning rate. 6.verbose = 1: print evaluation metric.
 
-➔ Moreover, in order to get a Simple and a sophisticated model, we trained our model using the xgboost (simple) and xgb.train() methods, respectively. Hence by learning on one dataset and testing the model on another, it is possible to monitor a few metrics after each cycle of learning.
+* Moreover, in order to get a Simple and a sophisticated model, we trained our model using the xgboost (simple) and xgb.train() methods, respectively. Hence by learning on one dataset and testing the model on another, it is possible to monitor a few metrics after each cycle of learning.
 
-➔ The watchlist parameter has been used in the model, which provides a list of XGB and as far as the DMatrix is concerned ,each of them is tagged with a name.
+* The watchlist parameter has been used in the model, which provides a list of XGB and as far as the DMatrix is concerned ,each of them is tagged with a name.
+
+## CONCLUSION AND BUSINESS IMPROVEMENT
+
+* According to MAPE (Mean and Median Error Percentage), our regression model properly predicts the result 87.96 percent (Mean) and 95.63 percent (Median), with error percentages ranging from 3 percent to 12 percent. As of this writing, the R-square value is 0.7689372. Considering that these values range from 0.5 to 0.95, this is a decent predictive model to have in place.
+
+* We can see that positive responses, premium coverage, education (high school or less), employment and retirement status, male gender, income, married or single status, monthly auto premiums, and the number of open complaints and policies all play a role in determining the CLV and its final value.
+
+* It is ironic that as an auto insurance company, vehicle type and size are not important.
+
+* This means that male drivers are more likely to be involved in an accident than their female counterparts.
+
+* Employees and retirees are more likely to need insurance and contribute more to the company as a result.
 
