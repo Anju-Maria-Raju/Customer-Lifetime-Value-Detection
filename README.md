@@ -49,5 +49,5 @@ In order to get a better accuracy (better than 80% as achieved by the previous m
 
 ## CONCLUSION 
 
-* According to MAPE (Mean and Median Error Percentage), our regression model properly predicts the result 87.96 percent (Mean) and 95.63 percent (Median), with error percentages ranging from 3 percent to 12 percent. As of this writing, the R-square value is 0.7689372. Considering that these values range from 0.5 to 0.95, this is a decent predictive model to have in place.
+According to MAPE (Mean and Median Error Percentage), our regression model properly predicts the result 87.96 percent (Mean) and 95.63 percent (Median), with error percentages ranging from 3 percent to 12 percent. As of this writing, the R-square value is 0.7689372. Considering that these values range from 0.5 to 0.95, this is a decent predictive model to have in place.
 
