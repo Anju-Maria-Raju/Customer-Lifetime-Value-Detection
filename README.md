@@ -1,12 +1,12 @@
 # Customer-Lifetime-Value-Detection
 
-## PROBLEM STATEMENT / AIM:
+## PROBLEM STATEMENT / AIM
 The objective of this project is the prediction of Customer Life-time Value (CLV). CLV is the lifetime value of a customer, or in other words it represents the total amount of money a customer is expected to spend in business, or on products, during their lifetime. CLV is an important metric because it provides the business groups with a customer-centric perspective to guide some critical marketing and sales strategies, thereby enhancing important business decisions.
 
-## WORKFLOW:
+## WORKFLOW
 Initially in this project we have analysed the data through various exploratory data analysis techniques to explain the relationship between Customer Lifetime Value that is the target variable with the other explanatory variables. Further after rigorous analysis the most appropriate model is chosen and fitted to the data, which provides the highest accuracy.
 
-## UNDERSTANDING THE DATA:
+## UNDERSTANDING THE DATA
 
 * Data columns and values: There are a total of 24 data columns including the target variable that is the CLV. The columns are Customer, State , CLV , Response, Coverage, Education, EffectiveToDate, EmploymentStatus, Gender, Income, LocationCode ,MaritalStatus, MonthlyPremiumAuto , MonthsSinceLastClaim, MonthsSincePolicyInception, NumberofOpenComplaints, NumberofPolicies, PolicyType, Policy , RenewOfferType, SalesChannel , TotalClaimAmount , VehicleClass and VehicleSize. There are a total of 9134 Observations in the dataset.
 
