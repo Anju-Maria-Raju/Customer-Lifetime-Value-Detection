@@ -14,17 +14,6 @@ Initially in this project we have analysed the data through various exploratory 
 
 * There are no missing values in the dataset hence there is no treatment of missing values.
 
-## PREDICTION ON THE TEST DATA
-* In order to predict the target variable various functions have been used such as -
-
-* Gain shows the improvement in accuracy brought by a feature to the branches it is on.
-
-* Cover measures the relative quantity of observations concerned by a feature.
-
-* Frequency displays the number of times a feature is used in all generated trees.
-
-* Displays the model’s approach is an acronym for extreme gradient boosting (XGBoost). We have used an optimization approach for regression problems which combines weak prediction models into a single strong prediction model thereby improving the insurance risk classifier’s performance by combining multiple models.
-
 
 ## FINAL MODEL - LINEAR REGRESSION WITH XGBOOST MODEL
 In order to get a better accuracy (better than 80% as achieved by the previous model) we applied the Linear Regression Model with XGBoost.
@@ -46,6 +35,17 @@ In order to get a better accuracy (better than 80% as achieved by the previous m
 * Moreover, in order to get a Simple and a sophisticated model, we trained our model using the xgboost (simple) and xgb.train() methods, respectively. Hence by learning on one dataset and testing the model on another, it is possible to monitor a few metrics after each cycle of learning.
 
 * The watchlist parameter has been used in the model, which provides a list of XGB and as far as the DMatrix is concerned ,each of them is tagged with a name.
+
+## PREDICTION ON THE TEST DATA
+* In order to predict the target variable various functions have been used such as -
+
+* Gain shows the improvement in accuracy brought by a feature to the branches it is on.
+
+* Cover measures the relative quantity of observations concerned by a feature.
+
+* Frequency displays the number of times a feature is used in all generated trees.
+
+* Displays the model’s approach is an acronym for extreme gradient boosting (XGBoost). We have used an optimization approach for regression problems which combines weak prediction models into a single strong prediction model thereby improving the insurance risk classifier’s performance by combining multiple models.
 
 ## CONCLUSION 
 
